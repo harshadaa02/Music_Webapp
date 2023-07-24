@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Webapp</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="musicbox">
+        <div class="heading">
+          <h2 class="music-heading">WARRIYO</h2>
+          <h3 class="music-subheading">Laura Brehm</h3>
+        </div>
+        <div><img src="1.jpg" class="img" /></div>
+        <audio src="1.mp3"></audio>
+        <div class="progressbar">
+          <div class="duration">
+            <div id="currenttime">0:00</div>
+            <div id="totaltime">3:50</div>
+          </div>
+          <div class="progressline">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="music_controls">
+          <div class="control backward">
+            <i class="fas fa-backward" id="prev" title="previous"></i>
+          </div>
+          <div class="control">
+            <i class="fas fa-play-circle" id="play" title="play"></i>
+          </div>
+          <div class="control forward">
+            <i class="fas fa-forward" id="next" title="next"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

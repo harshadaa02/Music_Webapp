@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Archivo", sans-serif;
+}
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-color: #fadcd9;
+  background-blend-mode: multiply;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.musicbox {
+  width: 350px;
+  height: 600px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f79489;
+  box-shadow: 1px 1px 8px rgb(255, 252, 252);
+}
+
+.music-heading {
+  color: #f9f1f0;
+  font-size: 40px;
+  text-shadow: 1px 1px 3px rgb(255, 252, 252);
+  margin-bottom: 15px;
+}
+
+.music-subheading {
+  color: #f9f1f0;
+  font-size: 25px;
+  text-shadow: 0px 0px 2px white;
+  text-align: center;
+}
+
+.img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px rgb(255, 252, 252);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.music_controls {
+  width: 330px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.control {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #f79489;
+  background-color: #f9f1f0;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px rgb(255, 252, 252);
+}
+
+.control:hover {
+  color: rgb(250, 133, 133);
+}
+
+.anime {
+  animation: rotatePlayer 3s linear infinite;
+}
+
+@keyframes rotatePlayer {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.progressbar {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.duration {
+  color: #f9f1f0;
+  width: 300px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progressline {
+  background-color: #f9f1f0;
+  width: 300px;
+  height: 5px;
+  border: 1px solid #f79489;
+  box-shadow: 1px 1px 1px rgb(255, 252, 252);
+  border-radius: 5px;
+  transition: all 0s linear;
+  -moz-transition: all 0s linear;
+  -o-transition: all 0s linear;
+  -webkit-transition: all 0s linear;
+  appearance: none;
+}
+
+.progress {
+  width: 0%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #d66e63;
+  transition: all 0s linear;
+  -moz-transition: all 0s linear;
+  -o-transition: all 0s linear;
+  -webkit-transition: all 0s linear;
+  appearance: none;
+}
